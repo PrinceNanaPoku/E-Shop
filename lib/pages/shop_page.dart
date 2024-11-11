@@ -20,14 +20,32 @@ class ShopPage extends StatelessWidget {
       ),
       drawer: const MyDrawer(),
       backgroundColor: Theme.of(context).colorScheme.background,
-      body: ListView.builder(
-          itemCount: products.length,
-          itemBuilder: (context, index) {
-            //get each individual product from shop
-            final product = products[index];
-            //return as a product tile UI
-            return MyProductTile(product: product);
-          }),
+      body: ListView(
+        children: [
+          const SizedBox(height: 15),
+          Center(
+            //subtitle of shop
+            child: Text(
+              'Pick from a selected list of premium products',
+              style: TextStyle(
+                  color: Theme.of(context).colorScheme.inversePrimary),
+            ),
+          ),
+          SizedBox(
+            height: 550,
+            child: ListView.builder(
+                itemCount: products.length,
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.all(15),
+                itemBuilder: (context, index) {
+                  //get each individual product from shop
+                  final product = products[index];
+                  //return as a product tile UI
+                  return MyProductTile(product: product);
+                }),
+          ),
+        ],
+      ),
     );
   }
 }
