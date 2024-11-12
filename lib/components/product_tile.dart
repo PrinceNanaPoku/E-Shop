@@ -22,16 +22,20 @@ class MyProductTile extends StatelessWidget {
           //cancel button
           MaterialButton(
             onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
           ),
 
           //yes button
-          MaterialButton(onPressed: () {
-            //pop dialog box
-            Navigator.pop(context);
+          MaterialButton(
+            onPressed: () {
+              //pop dialog box
+              Navigator.pop(context);
 
-            //add to cart
-            context.read<Shop>().addToCart(product);
-          })
+              //add to cart
+              context.read<Shop>().addToCart(product);
+            },
+            child: const Text('Yes'),
+          ),
         ],
       ),
     );
