@@ -14,7 +14,7 @@ class CartPage extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        content: const Text('Remove to Cart'),
+        content: const Text('Remove from Cart'),
         actions: [
           //cancel button
           MaterialButton(
@@ -83,7 +83,7 @@ class CartPage extends StatelessWidget {
                         trailing: IconButton(
                           onPressed: () =>
                               removeItemFromCart(context, cartItem),
-                          icon: const Icon(Icons.remove),
+                          icon: const Icon(Icons.delete),
                         ),
                       );
                     },
