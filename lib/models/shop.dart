@@ -34,7 +34,7 @@ class Shop extends ChangeNotifier {
       imagePath: 'images/jacket.jpg',
     ),
     Product(
-      name: 'Jacket 2',
+      name: 'Jacket',
       price: 50,
       description:
           'Warmth, Comfort and Unrivaled Style for the Urban Adventurer',
@@ -51,7 +51,7 @@ class Shop extends ChangeNotifier {
       name: 'Mancera Red Tobacco',
       price: 105,
       description:
-          'Mancera Red Tobacco embodies confidence, sophistication, and unbridled passion. Perfect for evening wear, this long-lasting fragrance leaves a lasting impression',
+          'This fragrance embodies confidence, sophistication, and unbridled passion. This long-lasting fragrance leaves a lasting impression',
       imagePath: 'images/mancera_red_tobacco.webp',
     ),
     Product(

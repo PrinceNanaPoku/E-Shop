@@ -81,9 +81,9 @@ class MyProductTile extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              const SizedBox(
-                height: 25,
-              ),
+              // const SizedBox(
+              // height: 5,
+              // ),
 
               //product description
               Text(
